@@ -4,7 +4,7 @@ Ist ein Entwurfsmuster, das eine Aktion für ein Objekt nur dann ausführt, wenn
 
 Wenn ein Objekt beispielsweise ZIP-Dateien liest und eine aufrufende Methode eine Get-Methode für das Objekt aufruft, obwohl die ZIP-Datei nicht geöffnet ist, würde das Objekt die Anforderung "blockieren".
 
-Balking wird eher als Anti-Muster, denn als Entwurfsmuster betrachtet. Wenn ein Objekt seine API nicht unterstützen kann, sollte es entweder die API einschränken, so dass der beanstandete Aufruf nicht verfügbar ist, oder so, dass der Aufruf ohne Einschränkung erfolgen kann. 
+Balking wird eher als Anti-Muster, denn als Entwurfsmuster betrachtet. Wenn ein Objekt seine API nicht unterstützen kann, sollte es entweder die API einschränken, so dass der beanstandete Aufruf nicht verfügbar ist, oder so, dass der Aufruf ohne Einschränkung erfolgen kann.
 
 Es sollte:
 
