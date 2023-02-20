@@ -37,3 +37,7 @@ func (d *Director) buildHouse() House {
 
 	return d.builder.getHouse()
 }
+
+func main() {
+
+}
