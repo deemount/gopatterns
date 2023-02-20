@@ -4,10 +4,9 @@ import (
 	"fmt"
 	"log"
 	"net"
+	"rpc-server/chat/rpc-server/chat"
 
 	"google.golang.org/grpc"
-
-	"github.com/deemount/gopatterns/protocoll-buffer/go-nodejs-grpc/rpc-server/chat"
 )
 
 func main() {
@@ -17,8 +16,9 @@ func main() {
 		log.Fatal(err)
 	}
 
-	chatServer := chat.Server{}
+	log.Println("rpc-server: listen on port 9000")
 
+	chatServer := chat.Server{}
 	grpcServer := grpc.NewServer()
 
 	chat.RegisterChatServiceServer(grpcServer, &chatServer)
@@ -26,4 +26,6 @@ func main() {
 	if err := grpcServer.Serve(listener); err != nil {
 		log.Fatal(err)
 	}
+	i := 101
+	fmt.Println(i)
 }

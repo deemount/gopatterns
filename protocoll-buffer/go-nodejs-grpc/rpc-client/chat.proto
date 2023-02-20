@@ -2,8 +2,6 @@ syntax = "proto3";
 
 package chat;
 
-option go_package = "/chat";
-
 service ChatService {
   rpc SayHello(Message) returns (Response) {}
   rpc GetDetails(Details) returns (Response) {}
