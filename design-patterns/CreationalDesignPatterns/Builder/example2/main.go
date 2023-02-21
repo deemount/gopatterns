@@ -38,6 +38,74 @@ func (d *Director) buildHouse() House {
 	return d.builder.getHouse()
 }
 
+/*
+
+ * Der IglooBuilder ist die Implementierung der Builder-Schnittstelle.
+ * Die Methoden setWindowType, setDoorType und setNumFloor sind Bestandteile des Hauses.
+ * Die Methode getHouse dient dazu, das gebaute Haus zurückzugeben.
+
+ */
+
+type IglooBuilder struct {
+	windowType string
+	doorType   string
+	floor      int
+}
+
+func (b *IglooBuilder) setWindowType() {
+	b.windowType = "Snow Window"
+}
+
+func (b *IglooBuilder) setDoorType() {
+	b.doorType = "Snow Door"
+}
+
+func (b *IglooBuilder) setNumFloor() {
+	b.floor = 1
+}
+
+func (b *IglooBuilder) getHouse() House {
+	return House{
+		doorType:   b.doorType,
+		windowType: b.windowType,
+		floor:      b.floor,
+	}
+}
+
+/*
+
+* Der UsualBuilder ist die Implementierung der Builder-Schnittstelle.
+* Die Methoden setWindowType, setDoorType und setNumFloor sind Bestandteile des Hauses.
+* Die Methode getHouse dient dazu, das gebaute Haus zurückzugeben.
+
+ */
+
+type UsualBuilder struct {
+	windowType string
+	doorType   string
+	floor      int
+}
+
+func (b *UsualBuilder) setWindowType() {
+	b.windowType = "Wooden Window"
+}
+
+func (b *UsualBuilder) setDoorType() {
+	b.doorType = "Wooden Door"
+}
+
+func (b *UsualBuilder) setNumFloor() {
+	b.floor = 2
+}
+
+func (b *UsualBuilder) getHouse() House {
+	return House{
+		doorType:   b.doorType,
+		windowType: b.windowType,
+		floor:      b.floor,
+	}
+}
+
 func main() {
 
 }
