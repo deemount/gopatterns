@@ -2,7 +2,7 @@
 
 Creational Design Pattern sind Entwurfsmuster und bieten verschiedene Mechanismen zur Erstellung von Objekten und Klassen, die die Flexibilität und die Wiederverwendung von Code erhöhen. In Golang können diese Muster mit den Funktionen der Sprache wie Schnittstellen, Strukturen und Methoden implementiert werden.
 
-Folgende strukturelle Entwurfsmuster für Go sind mit Beispielen enthalten
+Folgende kreationelle Entwurfsmuster für Go sind mit Beispielen enthalten
 
 * AbstractFactory
 * Builder
