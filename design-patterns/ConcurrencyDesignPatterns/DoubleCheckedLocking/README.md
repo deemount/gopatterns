@@ -47,7 +47,7 @@ func (obj *object) method() {
 
 ### Träge Initialisierung (Double checked; Thread safe)
 
-Ich nehme hypothetisches Beispiel für einen Fall, in dem zwei Goroutinen diese Methode gleichzeitig aufrufen. Beide erreichen das Prädikat check obj.property == nil und versuchen, die Sperre zu erhalten. An diesem Punkt gewinnt eine von ihnen und initialisiert die Eigenschaft, während die andere Goroutine wartet. Sobald die Mutex entsperrt ist, kommt die zweite Go-Routine und initialisiert die Eigenschaft erneut. Durch Hinzufügen einer zweiten Prüfung stellen wir sicher, dass die nachfolgende Goroutine dieselbe Eigenschaft nicht erneut initialisiert
+Ich nehme ein hypothetisches Beispiel für einen Fall, in dem zwei Goroutinen diese Methode gleichzeitig aufrufen. Beide erreichen das Prädikat check obj.property == nil und versuchen, die Sperre zu erhalten. An diesem Punkt gewinnt eine von ihnen und initialisiert die Eigenschaft, während die andere Goroutine wartet. Sobald die Mutex entsperrt ist, kommt die zweite Goroutine und initialisiert die Eigenschaft erneut. Durch das Hinzufügen einer zweiten Prüfung stelle ich sicher, dass die nachfolgende Goroutine dieselbe Eigenschaft nicht erneut initialisiert
 
 ```go
 func (obj *object) method() {
