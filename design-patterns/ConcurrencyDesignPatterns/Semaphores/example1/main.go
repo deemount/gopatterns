@@ -2,7 +2,6 @@ package main
 
 import (
 	"errors"
-	"os"
 	"time"
 )
 
@@ -55,7 +54,7 @@ func main() {
 
 	// Semaphore with Timeouts
 
-	tickets, timeout := 1, 3*time.Second
+	tickets, timeout := 25, 10*time.Second
 	s := New(tickets, timeout)
 
 	if err := s.Acquire(); err != nil {
@@ -69,17 +68,18 @@ func main() {
 	}
 
 	// Semaphore without Timeouts (Non-Blocking)
+	/*
+		tickets2, timeout2 := 0, 0*time.Second
+		s2 := New(tickets2, timeout2)
 
-	tickets2, timeout2 := 0, 0*time.Second
-	s2 := New(tickets2, timeout2)
+		if err := s2.Acquire(); err != nil {
+			if err != ErrNoTickets {
+				panic(err)
+			}
 
-	if err := s2.Acquire(); err != nil {
-		if err != ErrNoTickets {
-			panic(err)
+			// No tickets left, can't work :(
+			os.Exit(1)
 		}
-
-		// No tickets left, can't work :(
-		os.Exit(1)
-	}
+	*/
 
 }
