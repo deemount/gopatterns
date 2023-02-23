@@ -7,6 +7,7 @@ import (
 )
 
 func TestUsualBuilder(t *testing.T) {
+
 	usualBuilder := &UsualBuilder{}
 	director := &Director{}
 	director.setBuilder(usualBuilder)

@@ -7,9 +7,6 @@ import "log"
  * "One class should have one, and only one, responsibility."
  */
 
-// There are three common accounting transactions types are Cash, Non-Cash & Credit.
-// I use one common (Verkauf) of four AbstraktVerkauf transaction types (which are Verkauf,Purchases,Receipts,Payments)
-// to build a class
 type VerkaufSchnittstelle interface {
 	berechnen() float64
 }
@@ -76,7 +73,6 @@ func (v aussenhandel) berechnen() float64 {
  * to enable object creation without knowing the implementation class details.
  */
 
-// One of eight common Verkauf types (Einzelhandel,Aussenhandel,b2b,b2c,businessdevelopment,agency,consultative,ecommerce)
 func NeuVerkauf(typ string) VerkaufSchnittstelle {
 	switch typ {
 	case "Einzelhandel":
@@ -87,6 +83,8 @@ func NeuVerkauf(typ string) VerkaufSchnittstelle {
 		return nil
 	}
 }
+
+// Execute
 
 func main() {
 
