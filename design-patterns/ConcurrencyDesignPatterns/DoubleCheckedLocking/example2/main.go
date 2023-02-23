@@ -27,7 +27,9 @@ func getArr() *[]int {
 	if arr != nil { // 2nd check
 		return &arr
 	}
+
 	arr = []int{0, 1, 2}
+
 	return &arr
 }
 

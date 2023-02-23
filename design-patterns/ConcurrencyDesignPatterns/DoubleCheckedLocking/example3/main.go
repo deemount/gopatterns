@@ -10,16 +10,23 @@ import (
 
 /*
 
-	Hier haben wir ein Programm, das 4kb-Blöcke aus einer gemeinsamen Quelldatei liest
-	und etwas damit macht. Das sieht vielleicht nach einer guten Idee aus,
-	ist aber nicht so toll, wenn man bedenkt, was man davon hat. Startzeiten sind normalerweise
-	kein Problem für vernetzte Anwendungen (obwohl sie vielleicht ein Problem für kurzlebige Dienste sind).
+	Beispiel:
 
-	Verwende dieses Muster für eine träge Initialisierung, wenn der Gewinn durch die Verzögerung
-	der Initialisierung die zusätzlichen Wartungskosten wert ist.
+	Hier habe ich ein Programm, das 4kb-Blöcke aus einer gemeinsamen Quelldatei liest
+	und etwas damit macht. Das sieht vielleicht nach einer guten Idee aus,
+	ist aber nicht empfehlenswert, wenn man bedenkt, was man davon hat.
+
+	Startzeiten sind normalerweise kein Problem für vernetzte Anwendungen,
+	obwohl sie vielleicht ein Problem für kurzlebige Dienste sind.
+
+	Dieses Entwurfsmuster wird für eine träge Initialisierung verwendet.
+
+	* Hinweis: Der Gewinn durch die Verzögerung
+	           der Initialisierung  sollte die zusätzlichen
+			   Wartungskosten wert sein.
 
 	In den meisten Fällen sollte die Initialisierung zu Beginn des Programms mehr als genug sein.
-	Verwende dieses Muster für träge Initialisierungen sparsam.
+	Verwende also dieses Muster für träge Initialisierungen sparsam.
 
 */
 
