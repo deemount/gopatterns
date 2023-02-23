@@ -1,4 +1,4 @@
-package financial
+package main
 
 import "log"
 
@@ -8,11 +8,10 @@ import "log"
  */
 
 // There are three common accounting transactions types are Cash, Non-Cash & Credit.
-// I use one common (Sales) of four financial transaction types (which are Sales,Purchases,Receipts,Payments)
+// I use one common (Verkauf) of four AbstraktVerkauf transaction types (which are Verkauf,Purchases,Receipts,Payments)
 // to build a class
-type Financial interface {
-	GetSellingDate() string
-	CalculateSalesFee() float64
+type VerkaufSchnittstelle interface {
+	berechnen() float64
 }
 
 /*
@@ -20,56 +19,54 @@ type Financial interface {
  * "You should be able to extend a class's behavior without modifying it."
  */
 
-type Sales struct {
-	financials []Financial
+type Verkauf struct {
+	VerkaufSchnittstelle []VerkaufSchnittstelle
+	gebuehr              float64
 }
 
-func (s *Sales) CalculateSalesFee() float64 {
-	total := 0.0
-	for _, f := range s.financials {
-		total += f.CalculateSalesFee()
+func (v *Verkauf) berechnen() float64 {
+	for _, f := range v.VerkaufSchnittstelle {
+		v.gebuehr += f.berechnen()
 	}
-	return total
+	return v.gebuehr
 }
 
-func (s *Sales) AddSales(f Financial) {
-	s.financials = append(s.financials, f)
+func (v *Verkauf) hinzufuegen(f VerkaufSchnittstelle) {
+	v.VerkaufSchnittstelle = append(v.VerkaufSchnittstelle, f)
+}
+
+func (v Verkauf) total() float64 {
+	return v.gebuehr
 }
 
 /*
  * Interface Segregation Principle (I)
  * "Many client-specific interfaces are better than one general-purpose interface."
  */
-type InsideSales interface {
-	Financial
+type Einzelhandel interface {
+	VerkaufSchnittstelle
 }
 
-type OutsideSales interface {
-	Financial
+type einzelhandel struct {
+	Verkauf
 }
 
-type InsideSalesImpl struct {
-	sellingDate string
+func (v einzelhandel) berechnen() float64 {
+	v.gebuehr = 1.1
+	return v.gebuehr
 }
 
-func (i InsideSalesImpl) GetSellingDate() string {
-	return i.sellingDate
+type Aussenhandel interface {
+	VerkaufSchnittstelle
 }
 
-func (i InsideSalesImpl) CalculateSalesFee() float64 {
-	return 1.0
+type aussenhandel struct {
+	Verkauf
 }
 
-type OutsideSalesImpl struct {
-	sellingDate string
-}
-
-func (o OutsideSalesImpl) GetSellingDate() string {
-	return o.sellingDate
-}
-
-func (o OutsideSalesImpl) CalculateSalesFee() float64 {
-	return 2.0
+func (v aussenhandel) berechnen() float64 {
+	v.gebuehr = 2.0
+	return v.gebuehr
 }
 
 /*
@@ -79,19 +76,29 @@ func (o OutsideSalesImpl) CalculateSalesFee() float64 {
  * to enable object creation without knowing the implementation class details.
  */
 
-// One of eight common sales types (inside,outside,b2b,b2c,businessdevelopment,agency,consultative,ecommerce)
-func NewSales(types, sellingDate string) Financial {
-	switch types {
-	case "inside":
-		return InsideSalesImpl{sellingDate}
-	case "outside":
-		return OutsideSalesImpl{sellingDate}
+// One of eight common Verkauf types (Einzelhandel,Aussenhandel,b2b,b2c,businessdevelopment,agency,consultative,ecommerce)
+func NeuVerkauf(typ string) VerkaufSchnittstelle {
+	switch typ {
+	case "Einzelhandel":
+		return einzelhandel{}
+	case "Aussenhandel":
+		return aussenhandel{}
 	default:
 		return nil
 	}
 }
 
 func main() {
-	insideSales := NewSales("inside", "20220601")
-	log.Printf("%v", insideSales)
+
+	verkauf := new(Verkauf)
+
+	verkauf.hinzufuegen(NeuVerkauf("Einzelhandel"))
+	verkauf.berechnen()
+
+	verkauf.hinzufuegen(NeuVerkauf("Aussenhandel"))
+	verkauf.berechnen()
+
+	log.Printf("%#v", verkauf)
+	log.Printf("main: gebühren (total) %#v", verkauf.total())
+
 }
