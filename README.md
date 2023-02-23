@@ -2,7 +2,7 @@
 
 Vorlagen für intuitives Arbeiten und für den alltäglichen Gebrauch in Go.
 
-**Hinweis**T
+**Hinweis**
 Alle Beschreibungen sind in deutscher Sprache. Empfohlen wird nach ausgiebiger Studie die englische Sprache in der verwendung von Code.
 
 ## Entwurfsmuster
