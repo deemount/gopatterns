@@ -21,6 +21,8 @@ Double Checked Locking ist ein ziemlich fortschrittliches Entwurfsmuster. Und ob
 
 Doppelt geprüftes Sperren schadet der Lesbarkeit Ihres Codes. Verwende dieses Muster erst, wenn es tatsächlich der Sicherheit oder Leistung dient.
 
+Es ist jedoch erwähnenswert, dass das Double-Checked-Locking-Entwurfsmuster in Go allgemein als Anti-Muster betrachtet wird, da es schwierig sein kann, es richtig zu machen und zu subtilen Gleichzeitigkeitsfehlern führen kann. In den meisten Fällen ist es besser, einfachere Muster wie Lazy Initialization mit sync.Once zu verwenden oder Dependency Injection einzusetzen, um sicherzustellen, dass eine einzige Instanz einer Struktur in allen Teilen der Anwendung gemeinsam genutzt wird.
+
 ## Beispiel
 
 ### Träge Initialisierung (Einfach)
