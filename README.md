@@ -19,7 +19,7 @@ Alle Beschreibungen sind in deutscher Sprache. Empfohlen wird nach ausgiebiger S
     * State
     * Strategy
     * Template Method
-* Visitor
+    * Visitor
   * Concurrency
     * Active Object
     * Balking
