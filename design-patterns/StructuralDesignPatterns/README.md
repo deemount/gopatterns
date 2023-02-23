@@ -18,6 +18,7 @@ Strukturelle Entwurfsmuster bilden in der Softwareentwicklung Entwurfsmuster, di
 Folgende strukturelle Entwurfsmuster für Go sind mit Beispielen enthalten
 
 * Adapter
+* Aggregate
 * Bridge
 * Composite
 * Decorator
