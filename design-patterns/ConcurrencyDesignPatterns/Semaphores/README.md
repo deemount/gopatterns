@@ -1,6 +1,6 @@
 # Semaphores
 
-Ein Semaphor ist ein Synchronisationsmuster/Primitiv, das einer begrenzten Anzahl von Ressourcen einen gegenseitigen Ausschluss auferlegt.
+Eine Semaphore ist ein Synchronisationsmuster/Primitiv, das einer begrenzten Anzahl von Ressourcen einen gegenseitigen Ausschluss auferlegt.
 
 Semaphore sind ein sehr allgemeiner Synchronisationsmechanismus, der verwendet werden kann, um Mutexe zu implementieren, den Zugriff auf mehrere Ressourcen zu beschränken, das Leser-Schreiber-Problem zu lösen, usw.
 

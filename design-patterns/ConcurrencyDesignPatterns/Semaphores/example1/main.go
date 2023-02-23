@@ -7,14 +7,19 @@ import (
 
 /*
 
- */
+	Beispiel:
+
+	Beschreibung folgt ...
+
+*/
 
 var (
-	ErrNoTickets      = errors.New("semaphore: could not aquire semaphore")
-	ErrIllegalRelease = errors.New("semaphore: can't release the semaphore without acquiring it first")
+	ErrNoTickets      = errors.New("semaphore: kann keine semaphore erwerben")
+	ErrIllegalRelease = errors.New("semaphore: kann semaphore nicht ausgeben bevor sie nicht erweorben worden ist")
 )
 
-// Interface contains the behavior of a semaphore that can be acquired and/or released.
+// Die Schnittstelle enthält das Verhalten einer Semaphore,
+// die erworben und/oder freigegeben werden kann.
 type Interface interface {
 	Acquire() error
 	Release() error
@@ -61,7 +66,7 @@ func main() {
 		panic(err)
 	}
 
-	// Do important work
+	// hier kann weiterer code ausgeführt werden
 
 	if err := s.Release(); err != nil {
 		panic(err)
