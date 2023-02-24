@@ -80,6 +80,7 @@ Alle aufgelisteten Typen der Entwurfsmuster beinhalten ein oder mehrere Beispiel
 Hier befinden sich weitere, nützliche Vorlagen bzw. Informationen, die nicht implizit zu den Entwurfsmuster und  Datenstrukturen dazugezählt werden (können).
 
 * Algorithm
+  * Binary Search
   * Knut-Morris-Pratt
   * Least Frequency Used (LFU)
   * Least Recently Used (LRU)
