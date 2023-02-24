@@ -82,6 +82,7 @@ Hier befinden sich weitere, nützliche Vorlagen bzw. Informationen, die nicht im
 * Algorithmen
   * Suchalgorithmen
     * Binary Search
+    * Bi Section Method (Halbierungsmethode)
     * Exponential Search
     * Interpolation Search
     * Linear Search
