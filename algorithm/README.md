@@ -13,6 +13,10 @@ Es gibt viele Verfahren, wie
 
 Die jeweils ihre Vor- und Nachteile haben und daher in bestimmten Szenarien verwendet werden.
 
+## Hash
+
+Beschreibung folgt ...
+
 ## Search
 
 **Hinweis:**
