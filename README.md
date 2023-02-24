@@ -75,6 +75,7 @@ Alle aufgelisteten Typen der Entwurfsmuster beinhalten ein oder mehrere Beispiel
 * Min Heap
 * Piece Table
 * Priority Queue
+* Rope
 * Succinct
 * Trie
 
