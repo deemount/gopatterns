@@ -81,9 +81,12 @@ Hier befinden sich weitere, nützliche Vorlagen bzw. Informationen, die nicht im
 
 * Algorithm
   * Binary Search
+  * Exponential Search
+  * Interpolation Search
   * Knut-Morris-Pratt
   * Least Frequency Used (LFU)
   * Least Recently Used (LRU)
+  * Linear Search
   * Most Frequent
   * Most Recently Used (MRU)
   * Selection
