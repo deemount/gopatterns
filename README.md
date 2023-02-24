@@ -2,7 +2,7 @@
 
 Vorlagen für intuitives Arbeiten und für den alltäglichen Gebrauch in Go.
 
-**Hinweis**
+**Hinweis:**
 Alle Beschreibungen sind in deutscher Sprache. Empfohlen wird nach ausgiebiger Studie die englische Sprache in der Verwendung.
 
 ## Entwurfsmuster
@@ -63,6 +63,7 @@ Alle aufgelisteten Typen der Entwurfsmuster beinhalten ein oder mehrere Beispiel
 
 ## Datenstrukturen
 
+* HashTable
 * Heap
 * LinkedList
 * MaxHeap
