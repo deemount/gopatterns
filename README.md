@@ -81,6 +81,17 @@ Alle aufgelisteten Typen der Entwurfsmuster beinhalten ein oder mehrere Beispiel
 Hier befinden sich weitere, nützliche Vorlagen bzw. Informationen, die nicht implizit zu den Entwurfsmuster und  Datenstrukturen dazugezählt werden (können).
 
 * Algorithmen
+  * Auswahl
+    * KTH Smallest Number
+  * Cache
+    * Least Frequency Used (LFU)
+    * Least Recently Used (LRU)
+    * Most Recently Used (MRU)
+  * Hash
+    * Perfect Hash Function
+  * Stringabgleich
+    * Knut-Morris-Pratt
+    * Most Frequent
   * Suchalgorithmen
     * Binary Search
     * Bi Section Method (Halbierungsmethode)
@@ -90,15 +101,6 @@ Hier befinden sich weitere, nützliche Vorlagen bzw. Informationen, die nicht im
     * Interpolation Search
     * Linear Search
     * Noisy Binary Search
-  * Cache
-    * Least Frequency Used (LFU)
-    * Least Recently Used (LRU)
-    * Most Recently Used (MRU)
-  * Stringabgleich
-    * Knut-Morris-Pratt
-    * Most Frequent
-  * Auswahl
-    * KTH Smallest Number
 * Coroutine
   * Yield/Resume (Simluation von yield/resulme erfolgt über Nebenläufigkeit)
   * Generator (Simluation von yield/resulme erfolgt über Nebenläufigkeit)
