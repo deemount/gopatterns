@@ -63,6 +63,7 @@ Alle aufgelisteten Typen der Entwurfsmuster beinhalten ein oder mehrere Beispiel
 
 ## Datenstrukturen
 
+* Doubly Linked List
 * HashTable
 * Heap
 * LinkedList
