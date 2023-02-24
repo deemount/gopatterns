@@ -67,11 +67,13 @@ Alle aufgelisteten Typen der Entwurfsmuster beinhalten ein oder mehrere Beispiel
 
 * Binary Tree
 * Doubly Linked List
+* Gap Buffer
 * Hash Table
 * Heap
 * Linked List
 * Max Heap
 * Min Heap
+* Piece Table
 * Priority Queue
 * Succinct
 * Trie
