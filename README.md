@@ -89,6 +89,7 @@ Hier befinden sich weitere, nützliche Vorlagen bzw. Informationen, die nicht im
   * Linear Search
   * Most Frequent
   * Most Recently Used (MRU)
+  * Noisy Binary Search
   * Selection
     * KTH Smallest Number
 * Coroutine
