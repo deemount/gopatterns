@@ -4,7 +4,22 @@ import "fmt"
 
 /*
 
- */
+	Beispiel:
+
+	In diesem Beispiel nimmt die perfectHash-Funktion ein Array von Zeichenketten und
+	gibt eine perfekte Hash-Funktion für diese Zeichenketten zurück.
+	Sie verwendet drei Hash-Funktionen, um eine Kandidaten-Hash-Funktion zu erzeugen
+	und prüft dann auf Kollisionen, indem sie die Kandidaten-Hash-Funktion auf jede
+	Zeichenkette anwendet und prüft, ob zwei Zeichenketten den gleichen Hash-Wert haben.
+	 Wenn es Kollisionen gibt, wird eine neue Hash-Funktion generiert und der Versuch wiederholt.
+
+	Sobald sie eine perfekte Hash-Funktion gefunden hat, gibt sie diese zurück. Die Hauptfunktion
+	verwendet dann die perfekte Hash-Funktion, um jede Zeichenkette im Eingabefeld zu
+	hashen und gibt die resultierenden Hash-Werte aus.
+
+	Beachte, dass die Hash-Werte für jede Zeichenkette im Eingabefeld garantiert eindeutig sind.
+
+*/
 
 func perfectHash(data []string) func(string) int {
 	size := len(data)
