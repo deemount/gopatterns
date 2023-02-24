@@ -1,0 +1,3 @@
+# Datenstrukturen
+
+## Doubly Linked List
