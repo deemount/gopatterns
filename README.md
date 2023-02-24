@@ -88,6 +88,7 @@ Hier befinden sich weitere, nützliche Vorlagen bzw. Informationen, die nicht im
     * Least Recently Used (LRU)
     * Most Recently Used (MRU)
   * Hash
+    * Cuckoo Hashing
     * Perfect Hash Function
   * Stringabgleich
     * Knut-Morris-Pratt
