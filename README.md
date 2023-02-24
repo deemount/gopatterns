@@ -3,13 +3,24 @@
 Vorlagen für intuitives Arbeiten und für den alltäglichen Gebrauch in Go.
 
 **Hinweis**
-Alle Beschreibungen sind in deutscher Sprache. Empfohlen wird nach ausgiebiger Studie die englische Sprache in der verwendung von Code.
+Alle Beschreibungen sind in deutscher Sprache. Empfohlen wird nach ausgiebiger Studie die englische Sprache in der Verwendung.
 
 ## Entwurfsmuster
 
+### Anzahl
+
+Alle aufgelisteten Typen der Entwurfsmuster beinhalten ein oder mehrere Beispiele, die in der Anwendung zwar gestestet sind, dennoch ohne *_test.go-Datei dahergekommen. Diese werden nach und nach eingefügt.
+
+* Verhaltensmuster: 11
+* Nebenläufigkeitsmuster: 12
+* Erzeugungsmuster: 6
+* Strukturmuster: 8
+
+### Übersicht
+
 * Gang Of Four
-  * Behavioral
-    * Chain Of responsibility
+  * Verhaltensmuster (Behavioral)
+    * Chain Of Responsibility
     * Command
     * Interpreter
     * Iterator
@@ -20,7 +31,7 @@ Alle Beschreibungen sind in deutscher Sprache. Empfohlen wird nach ausgiebiger S
     * Strategy
     * Template Method
     * Visitor
-  * Concurrency
+  * Nebenläufigkeitsmuster (Concurrency)
     * Active Object
     * Balking
     * Binding Properties
@@ -33,14 +44,14 @@ Alle Beschreibungen sind in deutscher Sprache. Empfohlen wird nach ausgiebiger S
     * Message Design Pattern
     * Monitor Object
     * Semaphores
-  * Creational
+  * Erzeugungsmuster (Creational)
     * AbstractFactory
     * Builder
     * FactoryMethod
     * Multiton
     * Prototype
     * Singleton
-  * Structural
+  * Strukturmuster (Structural)
     * Adapter
     * Aggregate
     * Bridge
