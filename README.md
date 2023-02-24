@@ -102,6 +102,8 @@ Hier befinden sich weitere, nützliche Vorlagen bzw. Informationen, die nicht im
     * Interpolation Search
     * Linear Search
     * Noisy Binary Search
+  * Baumstrukturen
+    * Strahler Number
 * Coroutine
   * Yield/Resume (Simluation von yield/resulme erfolgt über Nebenläufigkeit)
   * Generator (Simluation von yield/resulme erfolgt über Nebenläufigkeit)
