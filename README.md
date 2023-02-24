@@ -16,6 +16,8 @@ Alle aufgelisteten Typen der Entwurfsmuster beinhalten ein oder mehrere Beispiel
 * Erzeugungsmuster: 6
 * Strukturmuster: 8
 
+***insgesamt:*** 37
+
 ### Übersicht
 
 * Gang Of Four
@@ -63,15 +65,25 @@ Alle aufgelisteten Typen der Entwurfsmuster beinhalten ein oder mehrere Beispiel
 
 ## Datenstrukturen
 
+* Binary Tree
 * Doubly Linked List
-* HashTable
+* Hash Table
 * Heap
-* LinkedList
-* MaxHeap
-* MinHeap
+* Linked List
+* Max Heap
+* Min Heap
 * Trie
 
 ## Weitere
 
-* Protocoll Buffer
+Hier befinden sich weitere, nützliche Vorlagen bzw. Informationen, die nicht implizit zu den Entwurfsmuster und  Datenstrukturen dazugezählt werden (können).
+
+* Algorithm
+  * Least Frequency Used (LFU)
 * Coroutine
+  * Yield/Resume (Simluation von yield/resulme erfolgt über Nebenläufigkeit)
+  * Generator (Simluation von yield/resulme erfolgt über Nebenläufigkeit)
+* Protocoll Buffer
+  * Node.js, Go und gRPC
+* Templates
+  * Nested
