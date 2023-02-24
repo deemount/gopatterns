@@ -73,6 +73,7 @@ Alle aufgelisteten Typen der Entwurfsmuster beinhalten ein oder mehrere Beispiel
 * Max Heap
 * Min Heap
 * Priority Queue
+* Succinct
 * Trie
 
 ## Weitere
@@ -84,6 +85,8 @@ Hier befinden sich weitere, nützliche Vorlagen bzw. Informationen, die nicht im
     * Binary Search
     * Bi Section Method (Halbierungsmethode)
     * Exponential Search
+    * Fractional Cascading
+    * Ahnentafel (Genealogical Number System)
     * Interpolation Search
     * Linear Search
     * Noisy Binary Search
@@ -91,7 +94,7 @@ Hier befinden sich weitere, nützliche Vorlagen bzw. Informationen, die nicht im
     * Least Frequency Used (LFU)
     * Least Recently Used (LRU)
     * Most Recently Used (MRU)
-  * Stringmuster
+  * Stringabgleich
     * Knut-Morris-Pratt
     * Most Frequent
   * Auswahl
