@@ -1,1 +1,3 @@
-# Min Heap
+# Datenstrukturen
+
+## Min Heap

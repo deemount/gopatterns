@@ -1,6 +1,6 @@
 # Datenstrukturen
 
-## Linked List
+## (Singly) Linked List
 
 In der Informatik ist eine verknüpfte Liste eine lineare Sammlung von Datenelementen, deren lineare Reihenfolge nicht durch ihre physische Anordnung im Speicher gegeben ist. Stattdessen verweist jedes Element auf das nächste. Es handelt sich um eine Datenstruktur, die aus einer Gruppe von Knoten besteht, die zusammen eine Folge darstellen. In der einfachsten Form besteht jeder Knoten aus Daten und einem Verweis (mit anderen Worten: einem Link) auf den nächsten Knoten in der Folge.
 
