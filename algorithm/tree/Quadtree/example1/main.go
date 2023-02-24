@@ -29,6 +29,11 @@ import "log"
 	Beachte, dass diese Implementierung ein einfaches Beispiel ist und für bestimmte Anwendungsfälle
 	weiter optimiert werden kann.
 
+	In diesem Beispiel erstelle ich einen neuen QuadTree mit einer Kapazität von 4
+	und einer Rechteckbegrenzung von (0, 0) bis (100, 100). Anschließend füge ich dem
+	QuadTree mit der Methode Insert 6 Punkte hinzu. Abschließend werden die Punkte im
+	QuadTree ausgedruckt, die mit den eingefügten Punkten übereinstimmen sollten.
+
 */
 
 type Point struct {
