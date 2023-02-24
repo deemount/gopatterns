@@ -66,6 +66,7 @@ Alle aufgelisteten Typen der Entwurfsmuster beinhalten ein oder mehrere Beispiel
 * Heap
 * LinkedList
 * MaxHeap
+* MinHeap
 * Trie
 
 ## Weitere
