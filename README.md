@@ -89,7 +89,10 @@ Hier befinden sich weitere, nützliche Vorlagen bzw. Informationen, die nicht im
     * Most Recently Used (MRU)
   * Hash
     * Cuckoo Hashing
+    * Double Hashing
+    * Hopscotch Hashing
     * Perfect Hash Function
+    * Quadratic Probing
   * Stringabgleich
     * Knut-Morris-Pratt
     * Most Frequent
