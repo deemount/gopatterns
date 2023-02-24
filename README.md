@@ -104,7 +104,9 @@ Hier befinden sich weitere, nützliche Vorlagen bzw. Informationen, die nicht im
     * Noisy Binary Search
   * Baumstrukturen
     * Binary Space Partitioning (Binäre Raumaufteilung)
+    * KDTree
     * Strahler Number
+    * Quadtree
 * Coroutine
   * Yield/Resume (Simluation von yield/resulme erfolgt über Nebenläufigkeit)
   * Generator (Simluation von yield/resulme erfolgt über Nebenläufigkeit)
