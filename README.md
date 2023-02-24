@@ -103,6 +103,7 @@ Hier befinden sich weitere, nützliche Vorlagen bzw. Informationen, die nicht im
     * Linear Search
     * Noisy Binary Search
   * Baumstrukturen
+    * Binary Space Partitioning (Binäre Raumaufteilung)
     * Strahler Number
 * Coroutine
   * Yield/Resume (Simluation von yield/resulme erfolgt über Nebenläufigkeit)
