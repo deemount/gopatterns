@@ -72,6 +72,7 @@ Alle aufgelisteten Typen der Entwurfsmuster beinhalten ein oder mehrere Beispiel
 * Linked List
 * Max Heap
 * Min Heap
+* Priority Queue
 * Trie
 
 ## Weitere
@@ -80,6 +81,7 @@ Hier befinden sich weitere, nützliche Vorlagen bzw. Informationen, die nicht im
 
 * Algorithm
   * Least Frequency Used (LFU)
+  * Least Recently Used (LRU)
 * Coroutine
   * Yield/Resume (Simluation von yield/resulme erfolgt über Nebenläufigkeit)
   * Generator (Simluation von yield/resulme erfolgt über Nebenläufigkeit)
