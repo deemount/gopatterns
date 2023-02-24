@@ -80,8 +80,13 @@ Alle aufgelisteten Typen der Entwurfsmuster beinhalten ein oder mehrere Beispiel
 Hier befinden sich weitere, nützliche Vorlagen bzw. Informationen, die nicht implizit zu den Entwurfsmuster und  Datenstrukturen dazugezählt werden (können).
 
 * Algorithm
+  * Knut-Morris-Pratt
   * Least Frequency Used (LFU)
   * Least Recently Used (LRU)
+  * Most Frequent
+  * Most Recently Used (MRU)
+  * Selection
+    * KTH Smallest Number
 * Coroutine
   * Yield/Resume (Simluation von yield/resulme erfolgt über Nebenläufigkeit)
   * Generator (Simluation von yield/resulme erfolgt über Nebenläufigkeit)
