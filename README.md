@@ -1,6 +1,6 @@
 # gopatterns
 
-Vorlagen für intuitives Arbeiten und für den alltäglichen Gebrauch in Go.
+Vorlagen für intuitives Arbeiten und für die alltägliche Ideengewinnung in Go. Vor einem Gebrauch mit 1 zu 1 Übernahme wird gewarnt. Die vorhandenen Beispiele sind dennoch alle getestet.
 
 **Hinweis:**
 Alle Beschreibungen sind in deutscher Sprache. Empfohlen wird nach ausgiebiger Studie die englische Sprache in der Verwendung.
@@ -90,6 +90,11 @@ Hier befinden sich weitere, nützliche Vorlagen bzw. Informationen, die nicht im
     * Least Frequency Used (LFU)
     * Least Recently Used (LRU)
     * Most Recently Used (MRU)
+  * Geometrie
+    * Euklidische Distanz (Point Distance)
+    * Hyperplane
+    * Hypersphere
+    * Schnittstellenberechnung von Linien
   * Hash
     * Cuckoo Hashing
     * Double Hashing
