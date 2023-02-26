@@ -100,8 +100,11 @@ Hier befinden sich weitere, nützliche Vorlagen bzw. Informationen, die nicht im
     * Cuckoo Hashing
     * Double Hashing
     * Hopscotch Hashing
+    * Lineares Sondieren (Linear Probing)
     * Perfect Hash Function
     * Quadratic Probing
+  * Mathematik
+    * Ganzzahl Division (Integer Division)
   * Stringabgleich
     * Knut-Morris-Pratt
     * Most Frequent
