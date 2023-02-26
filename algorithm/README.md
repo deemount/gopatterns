@@ -1,6 +1,6 @@
 # Algorithmen
 
-## Cache
+## Cache (cache)
 
 Cache-Evakuierungsalgorithmen werden häufig in Betriebssystemen, Datenbanken und anderen Systemen verwendet, die Caches, durch Zwischenspeichern von Daten zur Beschleunigung der Ausführung, in der Anwendung verwenden.
 
@@ -13,17 +13,25 @@ Es gibt viele Verfahren, wie
 
 Die jeweils ihre Vor- und Nachteile haben und daher in bestimmten Szenarien verwendet werden.
 
-## Hash
+## Geometrie (geometry)
 
 Beschreibung folgt ...
 
-## Search
+## Lineare Funktionen
+
+Beschreibung folgt ...
+
+## Hash (hash)
+
+Beschreibung folgt ...
+
+## Suche (search)
 
 **Hinweis:**
 
 Go's sort-Standardbibliothek enthält die Funktionen Search, SearchInts, SearchFloat64s und SearchStrings, die eine allgemeine binäre Suche sowie spezifische Implementierungen für die Suche in Slices von Ganzzahlen, Fließkommazahlen bzw. Strings implementieren
 
-## Selection
+## Auswahl (selection)
 
 Beschreibung folgt ...
 
@@ -31,6 +39,6 @@ Beschreibung folgt ...
 
 Beschreibung folgt ...
 
-## Tree
+## Baumstrukturen (tree)
 
 Beschreibung folgt ...

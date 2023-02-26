@@ -94,6 +94,7 @@ Hier befinden sich weitere, nützliche Vorlagen bzw. Informationen, die nicht im
     * Euklidische Distanz (Point Distance)
     * Hyperplane
     * Hypersphere
+  * Lineare Funktionen
     * Schnittstellenberechnung von Linien
   * Hash
     * Cuckoo Hashing
