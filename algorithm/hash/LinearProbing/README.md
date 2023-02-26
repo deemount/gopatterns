@@ -1,0 +1,9 @@
+# Linear Probing
+
+## Konzept
+
+Lineares Sondieren (Linear probing) ist ein Schema in der Computerprogrammierung zur Auflösung von Kollisionen in Hash-Tabellen, Datenstrukturen zur Verwaltung einer Sammlung von Schlüssel-Wert-Paaren und zum Nachschlagen des mit einem bestimmten Schlüssel verbundenen Wertes. Es wurde 1954 von Gene Amdahl, Elaine M. McGraw und Arthur Samuel erfunden und 1963 erstmals von Donald Knuth analysiert.
+
+Zusammen mit dem quadratischen Probing und dem doppelten Hashing ist das lineare Probing eine Form der offenen Adressierung. Bei diesen Verfahren speichert jede Zelle einer Hashtabelle ein einzelnes Schlüssel-Wert-Paar. Wenn die Hash-Funktion eine Kollision verursacht, indem sie einen neuen Schlüssel einer Zelle der Hash-Tabelle zuordnet, die bereits von einem anderen Schlüssel belegt ist, sucht Linear Probing in der Tabelle nach der nächsten freien Stelle und fügt den neuen Schlüssel dort ein. Lookups werden auf die gleiche Weise durchgeführt, indem die Tabelle ab der durch die Hash-Funktion vorgegebenen Position sequentiell durchsucht wird, bis eine Zelle mit einem passenden Schlüssel oder eine leere Zelle gefunden wird.
+
+Thorup & Zhang (2012) schreiben: "Hash-Tabellen sind die am häufigsten verwendeten nichttrivialen Datenstrukturen, und die beliebteste Implementierung auf Standardhardware verwendet lineares Sondieren, das sowohl schnell als auch einfach ist." Lineares Sondieren kann aufgrund seiner guten Lokalität der Referenz eine hohe Leistung bieten, ist aber empfindlicher gegenüber der Qualität seiner Hash-Funktion als einige andere Kollisionsauflösungsverfahren. Es benötigt eine konstante erwartete Zeit pro Suche, Einfügung oder Löschung, wenn es mit einer zufälligen Hash-Funktion, einer 5-unabhängigen Hash-Funktion oder einem Tabulation-Hashing implementiert wird. In der Praxis können auch mit anderen Hash-Funktionen wie MurmurHash gute Ergebnisse erzielt werden.
