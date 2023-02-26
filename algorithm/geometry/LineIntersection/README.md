@@ -1,1 +1,0 @@
-# Schnittpunktberechnung von Linien
